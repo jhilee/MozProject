@@ -1,0 +1,7 @@
+<%= form_for @importer do |f| %>
+  <div class="form-group">
+    <%= f.label :file, "Upload CSV File" %>
+    <%= f.file_field :file, required: true %>
+  </div>
+  <%= f.button :submit, "Upload CSV" %>
+<% end %>

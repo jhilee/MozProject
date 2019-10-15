@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword: MyString
+  market: MyString
+  device: 1
+  site: one
+
+two:
+  keyword: MyString
+  market: MyString
+  device: 1
+  site: two

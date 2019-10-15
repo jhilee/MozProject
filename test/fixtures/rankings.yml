@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword: one
+  date_ranked: 2019-10-13
+  google: 1
+  google_base: 1
+  yahoo: 1
+  bing: 1
+  gsv: 1
+
+two:
+  keyword: two
+  date_ranked: 2019-10-13
+  google: 1
+  google_base: 1
+  yahoo: 1
+  bing: 1
+  gsv: 1
