@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'importers#index'
+  #root 'importers#index'
+  root 'welcome#index'
 
   resources :importers
 
