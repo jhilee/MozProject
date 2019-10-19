@@ -1,0 +1,15 @@
+<p>
+  <strong>Keyword:</strong>
+  <%= @keyword.keyword %>
+</p>
+
+<table id = "rankings">
+  <thead><tr>
+    <th>Date</th>
+    <th>google</th>
+  </tr></thead>
+
+  <tbody>
+  <%= render @keyword.rankings  %>
+  </tbody>
+</table>

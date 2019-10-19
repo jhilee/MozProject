@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   #root 'importers#index'
-  root 'welcome#index'
+  root 'sites#index'
 
   resources :importers
+  resources :sites
+  resources :keywords
+  resources :rankings
 
 
 

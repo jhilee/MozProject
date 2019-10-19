@@ -3,7 +3,8 @@ class KeywordsController < ApplicationController
     @keywords = Keyword.all
   end
 
-  def create
-
+  def show
+    @keyword = Keyword.find(params[:id])
   end
+
 end

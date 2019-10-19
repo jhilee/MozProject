@@ -28,9 +28,9 @@ class Importer < ApplicationRecord
 
 
       if keyword.nil?
-         site.keywords << keyword = Keyword.create(keyword: keyword_name,
-                                                   market: market,
-                                                   device: device)
+         keyword = site.keywords.create(keyword: keyword_name,
+                              market: market,
+                              device: device)
        end
 
       keyword.rankings << Ranking.create(
