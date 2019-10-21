@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.js"></script>
+
+<body>
 <p>
   <strong>Site:</strong>
   <%= @site.site %>
@@ -5,14 +9,34 @@
 
 <h2>Keywords</h2>
 
-<table id = "keywords">
-  <thead><tr>
-    <th>Keyword</th>
-    <th>Market</th>
-    <th>Device</th>
-  </tr></thead>
+<div class="media">
+
+<table class="table table-hover table-sm" data-turbolinks='false' id="keywords_table">
+  <thead>
+  <tr>
+    <th class="th-sm">Keyword</th>
+    <th class="th-sm">Market</th>
+    <th class="th-sm">Device</th>
+  </tr>
+  </thead>
 
   <tbody>
   <%= render @site.keywords %>
   </tbody>
 </table>
+</div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('#keywords_table').DataTable({
+            stateSave: true
+        });
+        $('#keywords_table tr').on('click', function(){
+            console.log("clicked!!!");
+            console.log(this.getElementsByTagName("td")[0].innerText);
+
+        })
+    });
+</script>
+

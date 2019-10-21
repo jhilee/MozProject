@@ -1,8 +1,17 @@
 <%= render 'importers/index' %>
 
 <% @sites.each do |site| %>
+  <br>
   <tr>
     <td><%= site.site %></td>
-    <td><%= link_to 'Show', site_path(site) %></td>
+    <td><%= link_to 'Show', site_path(site)%></td>
   </tr>
 <% end %>
+
+<script>
+    $(document).ready(function() {
+        $('#btnShow').click(function () {
+
+        });
+    });
+</script>

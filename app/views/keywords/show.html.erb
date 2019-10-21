@@ -3,13 +3,19 @@
   <%= @keyword.keyword %>
 </p>
 
-<table id = "rankings">
-  <thead><tr>
-    <th>Date</th>
-    <th>google</th>
-  </tr></thead>
+<p>
+  <%= @google_data %>
+</p>
 
-  <tbody>
-  <%= render @keyword.rankings  %>
-  </tbody>
-</table>
+<%= line_chart [
+                   {name: "Google", data: @google_data},
+                   {name: "Google Base", data: @google_base_data},
+                   {name: "Bing", data: @bing_data},
+                   {name: "Yahoo", data: @yahoo_data},
+               ], library: {scales: {yAxes: [{ticks: {reverse: true}}]}} %>
+
+<%= line_chart [
+                   {name: "gsv", data: @gsv}
+               ], library: {scales: {yAxes: [{ticks: {reverse: true}}]}} %>
+
+

@@ -3,10 +3,21 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+
 require("@rails/ujs").start()
-require("turbolinks").start()
+
+
 require("@rails/activestorage").start()
 require("channels")
+require("chartkick")
+require("chart.js")
+//= require("jquery")
+//= require jquery.turbolinks
+//= require turbolinks
+//= require ("bootstrap-sprockets")
+//= require dataTables/jquery.dataTables
+//= require dataTables/jquery.dataTables.foundation
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

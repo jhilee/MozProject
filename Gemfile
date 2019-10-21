@@ -15,6 +15,7 @@ gem 'sass-rails', '~> 5'
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'carrierwave', '~> 2.0'
@@ -26,7 +27,15 @@ gem 'carrierwave', '~> 2.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'jquery-rails'
+gem 'jquery-datatables-rails', '~> 3.4.0'
+
+# Use chartkick for rendering graphs
+gem "chartkick"
+
+
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
