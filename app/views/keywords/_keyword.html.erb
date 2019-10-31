@@ -1,5 +1,59 @@
-  <tr>
-    <td><%= keyword.keyword  %></td>
-    <td><%= keyword.market %></td>
-    <td><%= keyword.device %></td>
-  </tr>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.js"></script>
+
+<body>
+
+<p>
+  <strong>Site:</strong>
+  <%= site.site %>
+</p>
+
+<h2>Keywords</h2>
+<% @keywords = Keyword.where(site_id:site.id) %>
+
+<div class="media">
+
+
+  <table class="table table-hover table-sm" data-turbolinks='false' id="keywords_table">
+    <thead>
+    <tr>
+      <th class="th-sm">Keyword</th>
+      <th class="th-sm">Market</th>
+      <th class="th-sm">Device</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @keywords.each do |keyword| %>
+      <tr>
+        <td id=<%= keyword.id %>><%= link_to keyword.keyword, ranking_path(keyword)  %></td>
+        <td><%= keyword.market %></td>
+        <td><%= keyword.device %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div id="rankings_graph2">
+
+</div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('#rankings_graph2').hide()
+        $('#keywords_table').DataTable({
+            stateSave: true
+        });
+        $('#keywords_table tr').on('click', function(){
+            console.log("clicked!!!");
+            console.log(this.getElementsByTagName("td")[0].id);
+            console.log(this.getElementsByTagName("td")[0].innerText);
+
+        })
+    });
+
+
+</script>

@@ -29,10 +29,13 @@ gem 'carrierwave', '~> 2.0'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'jquery-datatables-rails', '~> 3.4.0'
 
 # Use chartkick for rendering graphs
 gem "chartkick"
+
+gem 'bootstrap'
 
 
 
