@@ -11,14 +11,14 @@ require("@rails/activestorage").start()
 require("channels")
 require("chartkick")
 require("chart.js")
-//= require("jquery")
+//= require jquery
+//= require popper
 //= require jquery.turbolinks
 //= require turbolinks
-//= require ("bootstrap-sprockets")
+//= require bootstrap-sprockets
 //= require dataTables/jquery.dataTables
-//= require dataTables/jquery.dataTables.foundation
-
-
+//= require jquery-ui
+//= require_tree.
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

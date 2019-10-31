@@ -1,17 +1,17 @@
 <%= render 'importers/index' %>
 
+<h2> testing </h2>
 <% @sites.each do |site| %>
   <br>
   <tr>
     <td><%= site.site %></td>
-    <td><%= link_to 'Show', site_path(site)%></td>
   </tr>
+  <%= render partial: 'keywords/keyword', locals:{site: site} %>
 <% end %>
 
 <script>
     $(document).ready(function() {
         $('#btnShow').click(function () {
-
         });
     });
 </script>

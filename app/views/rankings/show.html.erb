@@ -1,15 +1,3 @@
-<% @keyword = Keyword.find(keyword_id)
-   @rankings = Ranking.where(keyword_id:params[:id])
-   @google_ranks = Ranking.extract_data(@rankings,"google")
-   @google_base_ranks = Ranking.extract_data(@rankings,"google_base")
-   @bing_ranks = Ranking.extract_data(@rankings,"bing")
-   @yahoo_ranks = Ranking.extract_data(@rankings,"yahoo")
-   @gsv = Ranking.extract_data(@rankings,"gsv")
-   @google_wranks = Ranking.get_weighted_rank(@keyword.id,@google_ranks,@gsv)
-   @google_base_wranks = Ranking.get_weighted_rank(@keyword.id,@google_base_ranks,@gsv)
-   @bing_wranks = Ranking.get_weighted_rank(@keyword.id,@bing_ranks,@gsv)
-   @yahoo_wranks = Ranking.get_weighted_rank(@keyword.id,@yahoo_ranks,@gsv) %>
-
 <p>
   <strong>Keyword:</strong>
   <%= @keyword.keyword %>
