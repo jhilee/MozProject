@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8310bdc2-b791-4018-a52a-a5b8cc6a4a5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MozApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MozApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/keywords.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/keywords.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sites_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sites_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/rankings_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/rankings_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/importer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/importer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/keyword.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/keyword.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ranking.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ranking.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/site.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/site.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/keywords/_keyword.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/keywords/_keyword.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/keywords/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/keywords/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/keywords/show.js.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/rankings/_ranking.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rankings/_ranking.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sites/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sites/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sites/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sites/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rankings/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rankings/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rankings/show.js.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rankings/show.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,6 +32,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572156174961</updated>
-      <workItem from="1572156176236" duration="42190000" />
+      <workItem from="1572156176236" duration="54454000" />
     </task>
     <servers />
   </component>
