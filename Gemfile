@@ -35,7 +35,6 @@ gem 'jquery-datatables-rails', '~> 3.4.0'
 # Use chartkick for rendering graphs
 gem "chartkick"
 
-gem 'bootstrap'
 
 
 

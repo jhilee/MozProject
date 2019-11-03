@@ -1,3 +1,17 @@
 // Place all the styles related to the Importers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_importer {
+  border: #1b6d85;
+}
+
+button {
+  background: #4B99AD;
+  padding: 5px 15px 5px 15px;
+  color: #fff;
+  font-weight: bold;
+  }
+
+button:hover, button:active{
+  background-color: #1b6d85;}

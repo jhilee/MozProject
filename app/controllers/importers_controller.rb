@@ -8,7 +8,15 @@ class ImportersController < ApplicationController
     @importer.save
     #render plain: params[:importer][:csv].inspect
     @importer.import(params[:importer][:csv])
-    redirect_to @importer
+
+    respond_to do |format|
+      if @importer.save
+        format.js
+      else
+        format.html { render :new}
+      end
+    end
+
   end
 
   def show

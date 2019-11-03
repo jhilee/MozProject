@@ -12,12 +12,12 @@ require("channels")
 require("chartkick")
 require("chart.js")
 //= require jquery
+//= require jquery-ui/widgets/datepicker
 //= require popper
 //= require jquery.turbolinks
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require dataTables/jquery.dataTables
-//= require jquery-ui
+
 //= require_tree.
 
 // Uncomment to copy all static images under ../images to the output folder and reference

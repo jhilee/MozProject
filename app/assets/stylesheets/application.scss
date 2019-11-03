@@ -1,5 +1,5 @@
 /*
- *= require jquery-ui
+ *= require jquery-ui/datepicker
  *= require dataTables/jquery.dataTables
  *= require_tree .
  *= require_self
@@ -8,3 +8,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

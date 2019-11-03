@@ -1,14 +1,33 @@
-<%= render 'importers/index' %>
+<div class="container-fluid">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-sm-4" id ="import" >
+        <%= link_to 'Import Data', new_importer_path, remote: true,id: "import_link" %>
+      </div>
+      <div class="col-sm-4">
+        <div class="description">
+        <h1 id="hi"> STAT Web App </h1>
+        <p> Welcome to STAT! You can upload your ranking data here and visualize them into graphs.<br>
+          You may also export the CSV data of the selected keywords for the selected date range<br>
+          <strong>Make sure start date and end date are both selected for data export</strong></p>
+        </div>
+      </div>
 
-<h2> testing </h2>
+    </div>
+  </div>
 <% @sites.each do |site| %>
-  <br>
-  <tr>
-    <td><%= site.site %></td>
-  </tr>
-  <%= render partial: 'keywords/keyword', locals:{site: site} %>
+ <div class="data">
+   <div class="row">
+     <br>
+     <tr>
+       <td><%= site.site %></td>
+     </tr>
+     <%= render partial: 'keywords/keyword', locals:{site: site} %>
+     <br>
 <% end %>
-
+  </div>
+  </div>
+</div>
 <script>
     $(document).ready(function() {
         $('#btnShow').click(function () {

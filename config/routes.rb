@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   resources :importers
   resources :sites
-  resources :keywords
+  resources :keywords do
+    collection do
+      get :_ranking
+    end
+  end
   resources :rankings do
     collection do
       get :export_csv
