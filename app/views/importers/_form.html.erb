@@ -1,8 +1,8 @@
-<h2> Import Data</h2>
-<%= form_for @importer do |f| %>
-  <div>
+
+<div class="import_form">
+<%= form_for(@importer, remote:true ) do |f| %>
     <%= f.label :csv, "Upload CSV File" %>
     <%= f.file_field :csv, required: true %>
-  </div>
-  <%= f.button :submit %>
+    <%= f.button :Submit %>
 <% end %>
+</div>

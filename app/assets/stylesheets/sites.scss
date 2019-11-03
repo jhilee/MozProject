@@ -2,14 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  padding: 10px;
-}
-.media {
-  padding: 30px;
-  width: 60%;
+
+///
+.description {
+  text-align: center;
 }
 
-h2 {
-  color: red;
+#import_link:link, #import_link:visited {
+  background-color: #4691A4;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#import_link:hover, #import_link:active {
+  background-color: #1b6d85;
+}
+
+// large screens
+@media only screen and (min-width: 1200px) {
+
 }
