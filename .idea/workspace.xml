@@ -4,16 +4,20 @@
     <list default="true" id="8310bdc2-b791-4018-a52a-a5b8cc6a4a5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/importers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/importers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/keywords.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/keywords.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/rankings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rankings.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/importers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/importers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/importers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/importers/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/importers/_index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/importers/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/importers/show.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/keywords/_keyword.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/keywords/_keyword.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sites/_list.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/keywords/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/keywords/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rankings/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rankings/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/sites/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sites/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sites/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572156174961</updated>
-      <workItem from="1572156176236" duration="70631000" />
+      <workItem from="1572156176236" duration="78819000" />
     </task>
     <servers />
   </component>
