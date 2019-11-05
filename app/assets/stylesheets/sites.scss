@@ -13,13 +13,34 @@
   color: white;
   padding: 14px 25px;
   text-align: center;
+  border-radius: 15px;
   text-decoration: none;
   display: inline-block;
 }
 
+
+
 #import_link:hover, #import_link:active {
   background-color: #1b6d85;
 }
+
+
+.data:link, .data:visited {
+  background-color: #73C6B6;
+  color: white;
+  margin: 0 10px 10px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.data:hover, .data:active {
+  background-color: #45B39D;
+}
+
+
 
 // large screens
 @media only screen and (min-width: 1200px) {

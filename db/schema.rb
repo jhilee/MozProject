@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_10_14_090654) do
     t.bigint "site_id", null: false
     t.string "keyword"
     t.string "market"
-    t.integer "device"
+    t.string "device"
     t.date "created_at"
     t.index ["site_id"], name: "index_keywords_on_site_id"
   end
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_10_14_090654) do
     t.integer "google_base"
     t.integer "yahoo"
     t.integer "bing"
-    t.integer "gsv"
+    t.integer "gsv", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["keyword_id"], name: "index_rankings_on_keyword_id"

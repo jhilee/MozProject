@@ -2,7 +2,7 @@ class Importer < ApplicationRecord
   mount_uploader :csv, CsvUploader
 
   def import (file_path)
-    devices = {desktop:1,smartphone:2}
+    #devices = {desktop:1,smartphone:2}
     data = CSV.parse(File.read(file_path), headers: true, col_sep: "\t")
     sites_cached = {}
     keywords_cached = {}
@@ -11,7 +11,7 @@ class Importer < ApplicationRecord
       site_name = row['Site']
       keyword_name = row['Keyword']
       market = row['Market']
-      device = devices[:"#{row["Device"]}"]
+      device = row["Device"]
       date_ranked = row["Date"]
       google = row["Google"]
       google_base =  row["Google Base Rank"]

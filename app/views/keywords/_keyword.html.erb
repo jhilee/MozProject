@@ -1,14 +1,10 @@
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
-<body>
 
-<p>
-  <strong>Site:</strong>
-  <%= site.site %>
-</p>
+<div class="container-fluid">
 
-<h2>Keywords</h2>
-<% @keywords = Keyword.where(site_id:site.id) %>
+<h3>
+  <strong>Site: <%= @site.site %></strong> Keywords
+
+</h3>
 
 <div class="custom-table col-md-4">
   <table class="table table-hover table-sm" data-turbolinks='false' id="keywords_table">
@@ -37,7 +33,7 @@
 
 </div>
 
-</body>
+</div>
 
 <script>
     $(document).ready(function () {
