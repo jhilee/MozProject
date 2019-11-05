@@ -1,24 +1,20 @@
-# README
+# MozApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites
+* rvm or rbenv
+* Ruby 2.6.3
+* Rails 6.0.0
 
-Things you may want to cover:
+### To get the MozApp running locally:
 
-* Ruby version
+Clone this repo
 
-* System dependencies
+$bundle install
 
-* Configuration
+$yarn install --check-files
 
-* Database creation
+$rake db:create db:migrate 
 
-* Database initialization
+$rails s
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to http://localhost:3000/
