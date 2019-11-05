@@ -1,35 +1,6 @@
 class Ranking < ApplicationRecord
   belongs_to :keyword
 
-
-
-  def self.graph_rankings(keyword_id,engine)
-    find_by_sql(<<-SQL
-    SELECT date_ranked,
-           #{engine}
-    FROM rankings
-    WHERE keyword_id = #{keyword_id}
-    SQL
-    ).map do |row|
-      [
-          row['date_ranked'],
-          row[engine]
-      ]
-    end
-  end
-
-  def self.find_gsv(keyword_id)
-    find_by_sql(<<-SQL
-    SELECT
-           gsv
-    FROM rankings
-    WHERE keyword_id = #{keyword_id}
-    SQL
-    ).map do |row|
-          row['gsv']
-    end
-  end
-
   def self.extract_data(data,column)
     extracted = []
     data.each do |row|
@@ -90,34 +61,4 @@ class Ranking < ApplicationRecord
       end
       end
   end
-
-  def self.to_csv_temp(startDate,endDate)
-    columns = %w{date_ranked google google_base yahoo bing gsv }
-    startDate = Date.parse(startDate)
-    endDate = Date.parse(endDate)
-    CSV.generate(headers: true) do |csv|
-      csv << columns
-      all.each do |result|
-        if startDate.nil? && endDate.nil?
-          csv << columns.map { |column| result.send(column) }
-        elsif startDate && endDate
-          if result.date_ranked >= startDate && result.date_ranked <= endDate
-            csv << columns.map { |column| result.send(column) }
-          end
-        elsif startDate && endDate.nil?
-          if result.date_ranked >= startDate
-            csv << columns.map { |column| result.send(column) }
-          end
-        elsif startDate.nil? && endDate
-          if result.date_ranked <= endDate
-            csv << columns.map { |column| result.send(column) }
-          end
-        end
-
-
-       # end
-      end
-    end
-  end
-
 end

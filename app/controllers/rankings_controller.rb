@@ -14,8 +14,6 @@ class RankingsController < ApplicationController
 
   end
 
-
-
   def export_csv
     respond_to do |format|
       selected_rankings = Ranking.where(keyword_id: params["keyword_id"], date_ranked: [params["from"]..params["to"]])

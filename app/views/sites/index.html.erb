@@ -17,16 +17,8 @@
 
     </div>
   </div>
-
       <% @sites.each do |site| %>
         <%= link_to site.site, keyword_path(site), remote:true ,class:"data" %>
     <% end %>
-
   <div id="siteTable"></div>
 </div>
-<script>
-    $(document).ready(function() {
-        $('#btnShow').click(function () {
-        });
-    });
-</script>
