@@ -13,17 +13,17 @@
 ActiveRecord::Schema.define(version: 2019_10_14_090654) do
 
   create_table "importers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "csv"
   end
 
   create_table "keywords", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "site_id", null: false
-    t.string "keyword", default: "", null: false
-    t.string "market", default: "", null: false
-    t.string "device", limit: 11, default: "", null: false
-    t.date "created_at", null: false
+    t.string "keyword"
+    t.string "market"
+    t.string "device"
+    t.date "created_at"
     t.index ["site_id"], name: "index_keywords_on_site_id"
   end
 
@@ -35,14 +35,14 @@ ActiveRecord::Schema.define(version: 2019_10_14_090654) do
     t.integer "yahoo"
     t.integer "bing"
     t.integer "gsv", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["keyword_id"], name: "index_rankings_on_keyword_id"
   end
 
   create_table "sites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "site", default: "", null: false
-    t.date "created_at", null: false
+    t.string "site"
+    t.date "created_at"
   end
 
   add_foreign_key "keywords", "sites"

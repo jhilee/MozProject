@@ -3,29 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8310bdc2-b791-4018-a52a-a5b8cc6a4a5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/csv_importer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/csv_imports.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/importers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/importers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/sites.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/keywords_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rankings_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sites_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sites_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/importer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/importer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/keyword.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/keyword.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ranking.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ranking.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/site.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/site.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rankings/_form.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rankings/export_csv.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rankings/show.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sites/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sites/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20191013222959_create_keywords.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20191013222959_create_keywords.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20191013223344_create_rankings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20191013223344_create_rankings.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/102/getstat.com-highest_ranks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/103/getstat.com-highest_ranks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/104/shorten_ver.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/105/shorten_ver.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/106/shorten_ver.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/107/shorten_ver.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/importer/csv/108/shorten_ver.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572156174961</updated>
       <workItem from="1572156176236" duration="81115000" />
+      <workItem from="1572912756367" duration="461000" />
     </task>
     <servers />
   </component>
@@ -79,7 +60,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
